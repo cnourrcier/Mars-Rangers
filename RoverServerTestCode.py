@@ -5,8 +5,8 @@ import signal
 
 #setting up server connection
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-host = socket.gethostbyname(socket.gethostname())
-#host = 'put your ip address here'
+#host = socket.gethostbyname(socket.gethostname())
+host = '192.168.0.13'
 port = 5555
 
 #error checking to make sure that the socket actually binded to the address
